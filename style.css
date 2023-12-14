@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  gap: 50rem;
+  border-bottom: 0.5px solid rgb(178, 178, 178);
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.moon {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mode p {
+  font-weight: 600;
+}
+
+.wrapper {
+  height: 92vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.searching_panel {
+  display: flex;
+  justify-content: space-around;
+  gap: 35.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 0.3rem 1.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  max-width: 8px;
+  max-height: 8px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  gap: 2rem;
+  background-color: white;
+  padding: 0.3rem 1.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 98%);
+  border-radius: 5px;
+}
+
+.search-icon {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  grid-row-gap: 3rem;
+  margin-left: 10rem;
+}
+
+.card {
+  height: 17rem;
+  width: 15rem;
+  gap: 10rem;
+  border-radius: 3%;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.flag {
+  width: 15rem;
+  height: 8rem;
+}
+
+.card h2 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.data {
+  padding: 0rem 1.5rem;
+}
+
+.data p {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.data span {
+  font-weight: 300;
+}
+
+.flag img {
+  width: 240px;
+  height: 128px;
+  border-radius: 3% 3% 0% 0%;
+}
+
+.filter_region {
+  position: absolute;
+  right: 6.2rem;
+  top: 10.5rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0rem 1rem;
+  min-width: 145.41px;
+}
+
+.hidden {
+  display: none;
+}
+
+.filter_region p:hover {
+  width: 45px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  padding: 0.3rem;
+  transition: 0.3s;
+}
+
+.back {
+  margin-left: 6.5rem;
+  height: 2rem;
+  width: 7rem;
+  border: none;
+  background-color: white;
+}
+
+.arrow-back {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.back p {
+  font-size: 0.85rem;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  transform: translate(0px, 2.5rem);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.big-flag {
+  width: 500px;
+  height: 350px;
+  margin-left: 100px;
+  margin-top: 130px;
+}
+
+.details {
+  display: flex;
+  gap: 7rem;
+  height: 350px;
+}
+
+.super-flex {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 3rem;
+}
+
+.country-details {
+  transform: translate(0px, 150px);
+}
+
+.country-details p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.country-details span {
+  font-weight: 300;
+}
+
+.border1 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
