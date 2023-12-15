@@ -16,6 +16,8 @@ const details = document.querySelector(".details");
 const cardsContainer = document.querySelector(".cards");
 const searchingPanel = document.querySelector(".searching_panel");
 
+let darkMode = true;
+
 const generateDetailMarkup = function (data) {
   const details = document.querySelector(".details");
   details.innerHTML = "";
@@ -144,8 +146,10 @@ const countryCard = document.querySelector(".country-card");
 const generateMarkup = function (data) {
   const cardsContainer = document.querySelector(".cards");
 
+  const cardClass = darkMode ? "dark_card" : "";
+
   const markup = `
-    <div class="card dark_card">
+    <div class="card ${cardClass}">
       <div class="flag"><img src='${data[0].flags.png}' /></div>
       <div class="data">
         <h2>${data[0].name.common}</h2>
@@ -287,8 +291,10 @@ function renderDefaultCountries() {
 function showResults(data) {
   const cardsContainer = document.querySelector(".cards");
 
+  const cardClass = darkMode ? "dark_card" : "";
+
   const markup = `
-      <div class="card dark_card">
+      <div class="card ${cardClass}">
         <div class="flag"><img src='${data[0].flags.png}' /></div>
         <div class="data">
           <h2>${data[0].name.common}</h2>
@@ -335,6 +341,8 @@ const filterRegions = function () {
 filterRegions();
 
 document.querySelector(".mode").addEventListener("click", function () {
+  darkMode = !darkMode;
+
   document.querySelector("input").classList.toggle("dark_input");
   document.querySelector(".search").classList.toggle("dark_search");
   document.querySelector("header").classList.toggle("dark_header");
