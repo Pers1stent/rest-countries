@@ -14,46 +14,67 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header>
+    <header class="dark_header">
       <h1>Where in the world?</h1>
       <div class="mode">
-        <img class="moon" src="design/moon.png" alt="moon" />
+        <img class="moon hidden" src="design/moon.png" alt="moon" />
+        <img class="dark_moon" src="design/moon-4-24.png" alt="moon" />
         <p>Dark Mode</p>
       </div>
     </header>
-    <div class="wrapper">
+    <div class="wrapper dark_wrapper">
       <div class="searching_panel">
-        <div class="search">
+        <div class="search dark_search">
           <img
-            class="search-icon"
+            class="search-icon hidden"
             src="design/magnifying-glass.png"
             alt="search icon"
           />
-          <input type="text" placeholder="Search for a country..." />
-        </div>
-        <div class="filter">
-          <p>Filter by Region</p>
           <img
-            class="arrow-down"
+            class="dark-search-icon"
+            src="design/search-13-24.png"
+            alt="search"
+          />
+          <input
+            class="dark_input"
+            type="text"
+            placeholder="Search for a country..."
+          />
+        </div>
+        <div class="filter dark_filter">
+          <p id="filterText">Filter by Region</p>
+          <img
+            class="arrow-down hidden"
             src="design/arrow-down-sign-to-navigate.png"
             alt="arrow-down"
           />
+          <img
+            class="dark_arrow-down"
+            src="design/arrow-204-24.png"
+            alt="arrow-down"
+          />
         </div>
-        <div class="filter_region hidden">
-          <p class="africa">Africa</p>
-          <p class="america">America</p>
-          <p class="asia">Asia</p>
-          <p class="europe">Europe</p>
-          <p class="oceania">Oceania</p>
+        <div class="filter_region hidden dark_filter_region">
+          <p class="africa" data-region="Africa">Africa</p>
+          <p class="america" data-region="Americas">Americas</p>
+          <p class="asia" data-region="Asia">Asia</p>
+          <p class="europe" data-region="Europe">Europe</p>
+          <p class="oceania" data-region="Oceania">Oceania</p>
         </div>
       </div>
       <div class="cards"></div>
       <div class="country-card hidden">
-        <div class="back">
-          <img class="arrow-back" src="/design/arrow.png" alt="arrow" />
+        <div class="back dark_back">
+          <img
+            class="arrow-back"
+            src="/design/icons8-arrow-left-50.png"
+            alt="arrow"
+          />
+
+          <img class="dark_arrow-back hidden" src="/design/arrow.png" alt="" />
           <p>Back</p>
         </div>
-        <div class="details"></div>
+        <div class="details dark_details"></div>
       </div>
     </div>
   </body>
