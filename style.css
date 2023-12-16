@@ -342,7 +342,7 @@ input {
 
   .search {
     margin-top: 0;
-    width: 23.77rem;
+    min-width: 22.8rem;
     height: 2rem;
     transform: translate(0px, 30px);
   }
@@ -380,10 +380,15 @@ input {
 
   .country-details {
     transform: translate(50px, 25px);
+    width: 20rem;
   }
 
   .margin {
     margin-bottom: 2rem;
+  }
+
+  .country-details p {
+    width: 20rem;
   }
 
   .hidden {

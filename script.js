@@ -126,7 +126,7 @@ const generateBorderDetails = async (borderCode) => {
         </div>
       </div>
       <div class="borders">
-        <p>Border Countries: ${borderSpan}</p>
+        <p class='borderss'>Border Countries: ${borderSpan}</p>
       </div>
     </div>
   `;
