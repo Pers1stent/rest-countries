@@ -48,9 +48,9 @@ h1 {
 }
 
 .wrapper {
-  height: 92vh;
-  width: 100vw;
   background-color: hsl(0, 0%, 98%);
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .dark_wrapper {
@@ -298,4 +298,95 @@ input {
   margin-left: 0.5rem;
   font-size: 0.7rem;
   cursor: pointer;
+}
+
+.footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: hsl(207, 26%, 17%);
+}
+
+.dark_footer {
+  background-color: hsl(0, 0%, 98%);
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    gap: 5rem;
+    justify-content: space-evenly;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    grid-row-gap: 3rem;
+    margin: 0;
+    margin-left: 6.2rem;
+  }
+
+  .searching_panel {
+    gap: 5rem;
+    display: block;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .search {
+    margin-top: 0;
+    width: 23.77rem;
+    height: 2rem;
+    transform: translate(0px, 30px);
+  }
+
+  .filter {
+    margin-top: 3rem;
+    width: 9rem;
+    margin-left: 2rem;
+  }
+
+  .filter_region {
+    right: 12.9rem;
+    top: 14.5rem;
+    min-width: 158px;
+  }
+
+  .details {
+    display: block;
+  }
+
+  .super-flex {
+    display: block;
+  }
+
+  .big-flag {
+    width: 350px;
+    height: 200px;
+    margin-left: 2.7rem;
+    margin-top: 70px;
+  }
+
+  .back {
+    margin-left: 2.8rem;
+  }
+
+  .country-details {
+    transform: translate(50px, 25px);
+  }
+
+  .margin {
+    margin-bottom: 2rem;
+  }
+
+  .hidden {
+    display: none;
+  }
 }

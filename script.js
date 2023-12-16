@@ -47,7 +47,7 @@ const generateDetailMarkup = function (data) {
     <div class="country-details">
       <h2>${data[0].name.common}</h2>
       <div class="super-flex">
-        <div>
+        <div class='margin'>
           <p>Native name: <span>${data[0].altSpellings[1]}</span></p>
           <p>Population: <span>${data[0].population.toLocaleString()}</span></p>
           <p>Region: <span>${data[0].region}</span></p>
@@ -75,6 +75,8 @@ const generateDetailMarkup = function (data) {
       generateBorderDetails(border);
     });
   });
+
+  document.querySelector(".wrapper").style.height = "92vh";
 };
 
 const generateBorderDetails = async (borderCode) => {
@@ -187,6 +189,7 @@ back.addEventListener("click", function () {
   cardsContainer.classList.remove("hidden");
   countryCard.classList.add("hidden");
   searchingPanel.classList.remove("hidden");
+  document.querySelector(".wrapper").style.height = "";
 });
 
 let selectedRegion = null;
@@ -365,4 +368,6 @@ document.querySelector(".mode").addEventListener("click", function () {
 
   document.querySelector(".arrow-back").classList.toggle("hidden");
   document.querySelector(".dark_arrow-back").classList.toggle("hidden");
+
+  document.querySelector(".footer").classList.toggle("dark_footer");
 });
