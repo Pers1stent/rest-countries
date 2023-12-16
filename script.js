@@ -354,6 +354,7 @@ document.querySelector(".mode").addEventListener("click", function () {
   filterRegion.classList.toggle("dark_filter_region");
   document.querySelector(".wrapper").classList.toggle("dark_wrapper");
   document.querySelector(".details").classList.toggle("dark_details");
+
   const allCard = document.querySelectorAll(".card");
   allCard.forEach((card) => card.classList.toggle("dark_card"));
 
